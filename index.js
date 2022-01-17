@@ -1,7 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const cloudinary = require('cloudinary').v2
-const { setError } = require('./src/utils/errors/error')
+const { setError } = require('./src/utils/errors/error');
+const  documentation  = require('./src/utils/doc/index.json');
 
 const UserRoutes = require('./src/api/user/user.routes');
 const AnimeRoutes = require('./src/api/anime/anime.routes');

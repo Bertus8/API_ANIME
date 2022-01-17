@@ -1,6 +1,6 @@
 {
   "name": "Anime-server",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Api of favorite Animes",
   "main": "index.js",
   "scripts": {
