@@ -75,8 +75,8 @@
             "Action":"GET"
         },{
             "Name":"Get All Characters",
-            "Description":"Get all albums",
-            "EndPoint":"/api/albums",
+            "Description":"Get all characters",
+            "EndPoint":"/api/characters",
             "Action":"GET"
             }]
     }]
