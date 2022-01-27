@@ -5,7 +5,7 @@ const animeSchema = new Schema({
     name: { type: 'String', trim: true, required: true },    
     year: { type: 'Number', trim: true},
     genre:  { type: 'String', trim: true, required: true },
-    characters:  [{ type: Schema.Types.ObjectId, trim: true, ref: "characters"}],
+    img:{ type: 'String', trim: true},
 },
  { timestamps: true }
 )
