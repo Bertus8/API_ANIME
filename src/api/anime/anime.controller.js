@@ -17,7 +17,7 @@ const postNewAnime = async (req, res, next) => {
 
 const getAllAnimes = async (req,res,next) => {
 try {
-    const animeDB = await Anime.find().populate('characters')
+    const animeDB = await Anime.find()
     res.status(200).json(animeDB)
 } catch (error) {
     console.log(error)
@@ -28,7 +28,7 @@ try {
 const getAnime = async (req,res,next) => {
     try {
         const { id } = req.params;
-        const animeDB = await Anime.findById(id).populate('characters')
+        const animeDB = await Anime.findById(id)
         if (!animeDB){
             return next(setError(404, 'Anime not found'))
         }
